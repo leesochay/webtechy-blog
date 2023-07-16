@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Bono",
+    "email": "bono@u2.com",
+    "password": "withorwithoutyou"
+  },
+  {
+    "name": "Pele",
+    "email": "soccer@cosmos.com",
+    "password": "footballlegend"
+  },
+  {
+    "name": "Winter",
+    "email": "star@bucks.com",
+    "password": "coffeeroaster"
+  }
+]

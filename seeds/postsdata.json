@@ -1,0 +1,14 @@
+[
+  {
+    "post_title": "Object-oriented programming",
+    "post_text": "From Wikipedia, Object-Oriented Programming (OOP) is a programming paradigm based on the concept of 'objects', which can contain data and code. The data is in the form of fields (often known as attributes or properties), and the code is in the form of procedures (often known as methods)."
+  },
+  {
+    "post_title": "Session vs. Cookies",
+    "post_text": "From javapoint.com, Session and cookies are used by different websites for storing user's data across different pages of the site. Both session and cookies are important as they keep track of the information provided by a visitor for different purposes. The main difference between both of them is that sessions are saved on the server-side, whereas cookies are saved on the user's browser or client-side."
+  },
+  {
+    "post_title": "Model-View-Controller (MVC)",
+    "post_text": "From MDN Web Docs, MVC (Model-View-Controller) is a pattern in software design commonly used to implement user interfaces, data, and controlling logic. It emphasizes a separation between the software's business logic and display. This 'separation of concerns' provides for a better division of labor and improved maintenance."
+  }
+]
