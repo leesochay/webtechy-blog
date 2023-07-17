@@ -1,0 +1,30 @@
+{{#if true}}
+<article class="card">
+  <header><h2>Create New Post</h2></header>
+    <form class="new-post-form">
+      <div>
+        <label for="new-post-title">Title:</label>
+        <input class="form-input" type="text" id="new-post-title" />
+      </div>
+      <div>
+        <label for="new-post-content">Content:</label>
+        <input class="form-input" type="password" id="new-post-content" />
+      </div>
+
+      <div>
+        <button type="submit">Create</button>
+      </div>
+    </form>
+</article>
+
+{{!-- <div>
+<button type="submit" class="btn"><a class="link" href="#">+ New Post</a></button>
+</div> --}}
+
+<script src="/js/createPost.js"></script>
+
+{{else}}
+<div>
+        <a href="/login">Log In</a>
+        <p>to post an entry</p>
+</div>

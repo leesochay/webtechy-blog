@@ -1,26 +1,33 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Tech Blog</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
 
   <body>
     <nav class="topnav">
-      <a class="active" href="#home">Home</a>
-      <a class="active" href="#home">Dashboard</a>
-      <a class="active" href="#home">Login</a>
-      <a class="active" href="#home">Logout</a>
+      <a class="active" href="/">Home</a>
+      <a class="active" href="/Dashboard">Dashboard</a>
+      {{#if logged_in}}
+        <a class="active" href="#">logout</a>
+      {{else}}
+        <a class="active" href="/login">login</a>
+      {{/if}}
     </nav>
     <header>
       <h1>The Tech Blog</h1>
     </header>
 
-      <main>
-        {{{body}}}
-      </main>
-    </div>
+    <main>
+      {{{body}}}
+    </main>
+
+    {{#if logged_in}}
+      <script src="/js/logout.js"></script>
+    {{/if}}
+
   </body>
 
 </html>
