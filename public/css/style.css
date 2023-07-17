@@ -55,3 +55,8 @@ header h1 {
   border-radius: 5px;
   box-shadow: 5px 5px #a7a7a7;
 }
+
+.card {
+  margin: 0 0 20px 0;
+  border: 3px solid #231010;
+}
