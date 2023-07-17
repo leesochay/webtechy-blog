@@ -1,0 +1,57 @@
+/* The foundational CSS for main layout */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body,
+html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #d9ead3;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #231010;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #231010;
+  color: #d9ead3;
+}
+
+.topnav a.active {
+  background-color: #231010;
+  color: #d9ead3;
+}
+
+header {
+  padding: 20px;
+  background-color: #231010;
+  color: #d9ead3;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+header h1 {
+  font-size: 2.8em;
+  color: #231010;
+  background-color: #d9ead3;
+  padding: 10px 25px;
+  display: inline-block;
+  border-radius: 5px;
+  box-shadow: 5px 5px #a7a7a7;
+}
