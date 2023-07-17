@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const { comments, posts, user } = require("/models");
+const { Comment, Posts, User } = require("../models");
 
 // Import the custom middleware
 const withAuth = require("../utils/auth");

@@ -1,7 +1,7 @@
-const router = require('express').Router();
+const router = require("express").Router();
 
-const dishRoutes = require('./dish-routes.js');
+const userRoutes = require("./user-routes");
 
-router.use('/dish', dishRoutes);
+router.use("/users", userRoutes);
 
 module.exports = router;
