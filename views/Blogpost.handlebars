@@ -1,16 +1,23 @@
-<div class="blogpost-card">
-  <div class="blogpost-card-header">
-    <!-- Below we are rendering one blogpost using a Handlebars.js expression -->
-    {{blogpost_title}}
-  </div>
-  <div class="card-body">
-    <p>
-      Description:
-      {{blogpost_text}}
-    </p>
-    <p>
-      Guest:
-      {{blogpost_text}}
-    </p>
-  </div>
-</div>
+<div class="single-blogpost-container">
+  <section class="card">
+      <header>
+        {{id}}.
+        {{blogpost_title}}
+        Posted by: xxx on
+        {{blogpost_date}}</header>
+      <p>
+        {{blogpost_text}}
+      </p>
+  </section>
+
+  <section class="card">
+      <header>
+        Add a comment:
+      </header>
+      <form class="comment-form" id="comment-form">
+        <input id="comment-input" name="comment-input"/>
+      </form>
+      <div>
+      <button type="submit">Sumbit</button>
+    </div>
+  </section>
