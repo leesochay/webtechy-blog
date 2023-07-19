@@ -1,12 +1,14 @@
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Tech Blog</title>
-    <link rel="stylesheet" href="/css/style.css" />
-  </head>
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8">
+  <title>Tech Blog</title>
+  <link rel="stylesheet" href="/css/jass.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
 
-  <body>
+<body>
+  <div class="flex-column justify-space-around">
     <nav class="topnav">
       <a class="active" href="/">Home</a>
       <a class="active" href="/Dashboard">Dashboard</a>
@@ -19,15 +21,11 @@
     <header>
       <h1>The Tech Blog</h1>
     </header>
-
-    <main>
-      {{{body}}}
-    </main>
-
-    {{#if logged_in}}
-      <script src="/js/logout.js"></script>
-    {{/if}}
-
+      <main class="container container-fluid mt-5">
+      <!-- se that is what we are instructing it to render in dish-routes.js. -->
+     {{{ body }}}
+      </main>
+  </div>
   </body>
 
 </html>
