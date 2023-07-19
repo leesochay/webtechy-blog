@@ -1,17 +1,30 @@
-/* The foundational CSS for main layout */
+:root {
+  --primary: #231010;
+  --secondary: #f5a25d;
+  --tertiary: #fa7f72;
+  --quatrinary: #d9ead3;
+  --light: #ebebeb;
+  --dark: #182c23;
+  --error: rgb(228, 46, 1);
+  --border-radius: 0.3rem;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-body,
-html {
-  height: 100%;
+body {
+  font-family: sans-serif;
   padding: 0;
   margin: 0;
-  font-family: sans-serif;
-  background-color: #d9ead3;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  /* min-height: 100vh; */
+  justify-content: flex-start;
+  background-color: var(--quatrinary);
 }
 
 .topnav {
@@ -33,30 +46,147 @@ html {
   color: #d9ead3;
 }
 
-.topnav a.active {
-  background-color: #231010;
-  color: #d9ead3;
-}
-
 header {
   padding: 20px;
-  background-color: #231010;
-  color: #d9ead3;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+  background: var(--primary);
+  color: var(--quatrinary);
+  border-bottom-style: solid;
 }
 
-header h1 {
-  font-size: 2.8em;
-  color: #231010;
-  background-color: #d9ead3;
-  padding: 10px 25px;
-  display: inline-block;
-  border-radius: 5px;
-  box-shadow: 5px 5px #a7a7a7;
+main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
 }
 
-.card {
-  margin: 0 0 20px 0;
-  border: 3px solid #231010;
+aside {
+  flex: 0;
+  background-color: var(--tertiary);
+  padding: 80px;
+  text-align: left;
+  color: var(--light);
+}
+
+nav {
+  display: flex;
+  background-color: var(--primary);
+}
+
+.blogpost-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 75%;
+  min-height: 100%;
+  margin: 0px auto;
+  border: 3px solid var(--primary);
+  border-radius: var(--border-radius);
+  border-style: solid;
+  border-width: medium;
+  background-color: var(--quatrinary);
+  color: var(--dark);
+  padding: 50px;
+  background-color: #ebebeb;
+}
+
+.add-blogpost-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 35%;
+  min-height: 100%;
+  min-width: 35%;
+  margin: 5px auto;
+  border: 3px solid var(--primary);
+  border-radius: var(--border-radius);
+  border-style: solid;
+  border-width: medium;
+  background-color: var(--quatrinary);
+  color: var(--dark);
+  padding: 50px;
+  text-align: center;
+  background-color: var(--quatrinary);
+}
+
+.edit-blogpost-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 35%;
+  min-height: 100%;
+  min-width: 35%;
+  margin: 5px auto;
+  border: 3px solid var(--primary);
+  border-radius: var(--border-radius);
+  border-style: solid;
+  border-width: medium;
+  background-color: var(--light);
+  color: var(--dark);
+  padding: 50px;
+  text-align: center;
+  background-color: var(--tertiary);
+}
+
+/* CARDS */
+.blogpost-card {
+  margin: 20px;
+  flex: 0 1 300px;
+  padding: 5px;
+  width: 35%;
+  min-height: 100%;
+  min-width: 35%;
+  border: 3px solid var(--primary);
+  border-radius: var(--border-radius);
+  border-style: solid;
+  border-width: medium;
+  background-color: var(--quatrinary);
+  color: var(--dark);
+}
+
+.menu-card {
+  margin: 50px;
+  flex: 0 1 300px;
+  padding: 5px;
+  border: 3px solid var(--dark);
+  border-radius: var(--border-radius);
+  border-style: groove;
+  border-width: thick;
+  background-color: var(--quatrinary);
+  color: var(--dark);
+}
+
+.card-header {
+  color: var(--light);
+  margin: 0;
+  background-color: var(--quatrinary);
+  padding: 0.625rem;
+  border: 3px solid var(--primary);
+  border-radius: var(--border-radius);
+  border-style: solid;
+  border-width: medium;
+}
+
+.has-nuts {
+  color: var(--error);
+}
+
+.blogpost-card-header {
+  font-size: 1.5rem;
+  color: var(--tertiary);
+  margin: 0;
+  background-color: var(--quatrinary);
+  padding: 0.625rem;
+  border-bottom-style: solid;
+}
+
+.card-body {
+  padding: 2.5%;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+/* LAYOUT */
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: flex-start;
+  align-items: center;
 }
