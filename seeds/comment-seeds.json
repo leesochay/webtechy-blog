@@ -1,17 +1,17 @@
 [
   {
-    "name": "Bono",
-    "email": "bono@u2.com",
-    "password": "withorwithoutyou"
+    "user_id": 1,
+    "comment_text": "Nunc rhoncus dui vel sem.",
+    "blogpost_id": 1
   },
   {
-    "name": "Pele",
-    "email": "soccer@cosmos.com",
-    "password": "footballlegend"
+    "user_id": 2,
+    "comment_text": "Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.",
+    "blogpost_id": 2
   },
   {
-    "name": "Winter",
-    "email": "star@bucks.com",
-    "password": "coffeeroaster"
+    "user_id": 3,
+    "comment_text": "Aliquam erat volutpat. In congue.",
+    "blogpost_id": 3
   }
 ]
