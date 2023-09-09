@@ -13,16 +13,10 @@ Comment.init(
     },
     user_id: {
       type: DataTypes.INTEGER,
-      allowNull: false,
-      // references: {
-      //   model: "user",
-      //   key: "id",
-      // },
-    },
-    comment_date: {
-      type: DataTypes.DATE,
-      allowNull: false,
-      defaultValue: DataTypes.NOW,
+      references: {
+        model: "user",
+        key: "id",
+      },
     },
     comment_text: {
       type: DataTypes.STRING,
@@ -31,15 +25,15 @@ Comment.init(
     blogpost_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      // references: {
-      //   model: "blogpost",
-      //   key: "id",
-      // },
+      references: {
+        model: "blogpost",
+        key: "id",
+      },
     },
   },
   {
     sequelize,
-    timestamps: false,
+    timestamps: true,
     freezeTableName: true,
     underscored: true,
     modelName: "comment",
