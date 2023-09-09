@@ -16,20 +16,20 @@ Blogpost.init(
       allowNull: false,
     },
     blogpost_text: {
-      type: DataTypes.STRING,
-    },
-    blogpost_date: {
-      type: DataTypes.DATE,
+      type: DataTypes.TEXT,
       allowNull: false,
-      defaultValue: DataTypes.NOW,
     },
     user_id: {
       type: DataTypes.INTEGER,
+      references: {
+        model: 'user',
+        key: 'id'
+      },
     },
   },
   {
     sequelize,
-    timestamps: false,
+    timestamps: true,
     freezeTableName: true,
     underscored: true,
     modelName: "blogpost",
