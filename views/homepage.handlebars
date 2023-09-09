@@ -1,42 +1,25 @@
-<!-- This template includes hardcoded data. In future lessons, you will be rendering data dynamically. -->
-<div class="blogpost-container">
-  <div class="card-header col-md-10">
-    <h2>
-      All Blogposts
-    </h2>
-  </div>
-  <!-- We implement the built-in helper, #each. This helper will iterate over blogposts -->
-  {{#each blogposts as |blogpost|}}
-    {{> Blogpost-details}}
-  {{/each}}
 
-  <div class="add-blogpost-container">
-    <h2>
-      Add your own blogpost!
-    </h2>
-    <form class="new-blogpost-form">
-      <label for="blogpost_title">
-        Title:
-      </label>
-      <br />
-      <textarea id="blogpost_title" name="blogpost_title" rows="1" cols="50">
-        {{blogpost_title}}
-      </textarea>
-      <br />
-      <label for="blogpost_text">
-        Post:
-      </label>
-      <br />
-      <textarea id="blogpost_text" name="blogpost_text" rows="5" cols="50">
-        {{blogpost_text}}
-      </textarea>
-      <br />
-      <button type="submit" value="Submit">
-        Submit
-      </button>
-    </form>
-  </div>
+<div>
+  <h1>The Blogposts</h1>
 </div>
 
-
-<script src="/js/add-blogpost.js"></script>
+<div>
+  {{#each blogposts as |blogpost|}}
+    <section class="card">
+      <header>
+        <a href="/blogposts/{{id}}">
+          {{id}}.
+          {{blogpost_title}}
+        </a>
+      </header>
+      <div>
+          <p>
+          {{blogpost_text}}
+          </p>
+      </div>
+      <div>
+          <p>Created by: {{user.username}}</p>
+      </div>
+    </section>
+  {{/each}}
+</div>
