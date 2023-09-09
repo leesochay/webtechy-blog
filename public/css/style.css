@@ -155,9 +155,9 @@ nav {
 
 .card-header {
   color: var(--light);
-  margin: 0;
+  margin:10px;
   background-color: var(--quatrinary);
-  padding: 0.625rem;
+  padding: 10px;
   border: 3px solid var(--primary);
   border-radius: var(--border-radius);
   border-style: solid;
@@ -183,10 +183,30 @@ nav {
   text-align: center;
 }
 
+.card a {
+  color: var(--quatrinary);
+}
+
 /* LAYOUT */
 .container {
   display: flex;
   flex-flow: column wrap;
   align-content: flex-start;
   align-items: center;
+}
+
+.card .signup-link {
+  color: var(--primary);
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
 }
