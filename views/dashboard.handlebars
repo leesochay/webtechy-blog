@@ -1,0 +1,32 @@
+
+<h1>Dashboard</h1>
+  <section class="card">
+    <header><h2>Add a new Blogpost</h2></header>
+    <form class="new-blogpost-form">
+        <div>
+            <label for="new-blogpost_title">Blogpost Title:</label>
+            <input type="text" id="new-blogpost_title" />
+        </div>
+        <div>
+            <label for="new-blogpost_text">Blogpost Content:</label>
+            <textarea id="new-blogpost_text" rows="10"></textarea>
+        </div>
+        <div>
+            <button type="submit">Add Blogpost</button>
+        </div>
+    </form>
+  </section>
+
+<br />
+
+<h2>Blog Contributions:</h2>
+  {{#each blogposts}}
+    <section class="card">
+        <header><a href="/blogposts/{{id}}">{{blogpost_title}}</a></header>
+        <p>Created by: {{user_id}}</p>
+        <button class="delete-post" data-post-id="{{id}}">Delete this Blogpost</button> 
+    </section>
+  {{/each}}
+
+<script src="/js/add-blogpost.js"></script>
+<script src="/js/delete-blogpost.js"></script>

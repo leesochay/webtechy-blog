@@ -1,40 +1,42 @@
-<div class="single-blogpost-container">
-  <section class="card">
-    <header>
-      {{id}}.
-      {{blogpost_title}}
-      Posted by: xxx on
-      {{blogpost_date}}</header>
-    <p>
-      {{blogpost_text}}
-    </p>
-  </section>
 
-
-  {{#each comments as |comment|}}
-    <header>
-      {{id}}.
-      Posted on
-      {{comment_date}}</header>
-    <!-- The card contains the first painting of the gallery -->
-    <p>
-      {{comment_text}}
-    </p>
-  {{/each}}
+<section class="card">
+<header>{{blogpost_title}}</header>
+<p>{{blogpost_text}}</p>
+{{!-- <p>Created by: {{user.name}} | Date: {{format_date createdAt}}</p> --}}
+<p>Created by: {{username}}</p>
 </section>
-
-
-
-  <section class="card">
-    <header>
-      Add a comment:
-    </header>
-
-    <form class="comment-form" id="comment-form">
-      <input id="comment-input" name="comment-input" />
-
-      <button type="submit" value="submit">Sumbit</button>
-    </form>
-  </section>
-
+<section class="card">
+<form class="add-comment-form">
+<div>
+<label for="add-comment-input">Add Comment:</label>
+<textarea id="add-comment-input"></textarea>
 </div>
+<button type="submit">Submit</button>
+</form>
+</section>
+<div>
+    <section class="card">
+    <header><h2>Edit a Blogpost</h2></header>
+    <form class="edit-blogpost-form">
+        <div>
+            <label for="edit-blogpost_text">New Blogpost Content:</label>
+            <textarea id="edit-blogpost_text" rows="3"></textarea>
+        </div>
+        <div>
+            <button type="submit" id="edit-blogpost">Edit Blogpost</button>
+        </div>
+    </form>
+    </section>
+</div>
+<h2>Comment History:</h2>
+<section>
+{{#each comments as |comment|}}
+<section class="card">
+<p>{{comment_text}}</p>
+{{!-- <p>By {{username}} on {{format_date createdAt}}</p> --}}
+<p>By {{user_id}}</p>
+</section>
+{{/each}}
+
+<script src="/js/add-comment.js"></script>
+<script src="/js/edit-blogpost.js"></script>
