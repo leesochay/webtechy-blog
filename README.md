@@ -31,6 +31,12 @@ The following npm packages were used in this project:
 Deployed Heroku site for submission:
 [The Webtechy Blog](https://immense-falls-61140-a675dc7e6a8f.herokuapp.com/)
 
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 ## Usage
 The local application is invoked by first sourcing the mysql schema. Then, by running npm run seeds, the database was given initial data. Finally npm start runs the application accessible on a specified lcoal port.
 
