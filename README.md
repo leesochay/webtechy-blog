@@ -11,6 +11,15 @@
   - [Questions](#questions)
 
 ## Description
+Deployed Heroku site for submission:
+[The Webtechy Blog](https://immense-falls-61140-a675dc7e6a8f.herokuapp.com/)
+
+![Homepage Screenshot](screenshots/homepage.png)
+
+![Blogpost Screenshot](screenshots/Blogpost.png)
+
+![Dashboard Screenshot](screenshots/Dashboard.png)
+
 The importance of technology blogs cannot be overlooked as they can enhance the understanding of the less experienced developers to seasoned veterans. These blogs can fulfill these learning enhancements whether by reading them or contributing to writing blogposts and commenting on published blogposts.
 
 This project and challenge is to build a blog site where future and current developers can publish their blog posts and comment on other posts as well. This project utilizes the Model-View-Controller (MVC) structure, utilizing handlebars for the viewing templates , sequelize as the ORM, and the express-session npm package for authentication.
@@ -27,15 +36,6 @@ The following npm packages were used in this project:
  - express-session: 1.17.3
  - mysql2: 3.3.5
  - sequelize: 6.32.0
-
-Deployed Heroku site for submission:
-[The Webtechy Blog](https://immense-falls-61140-a675dc7e6a8f.herokuapp.com/)
-
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## Usage
 The local application is invoked by first sourcing the mysql schema. Then, by running npm run seeds, the database was given initial data. Finally npm start runs the application accessible on a specified lcoal port.
